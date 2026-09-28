@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--
+  Cantina Ouro Branco — site institucional em formato PWA
+  Projeto Etec São Mateus (base: PWA - Progressive Web App)
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cantina Ouro Branco — Cozinha italiana tradicional</title>
+<meta name="description" content="Cantina Ouro Branco no Bom Retiro, São Paulo — cantina e pizzaria com mais de 60 anos de tradição italiana, pratos para compartilhar e horários diários.">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1e3a2e">
+<link rel="icon" href="logo-original.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="logo-original.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Fraunces:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#topo" class="brand" id="topo">
+      <img src="logo-original.svg" alt="Logo Cantina Ouro Branco">
+      <span class="brand-text">
+        <span class="name">
+          <span class="cantina">Cantina</span>
+          <span class="ouro">Ouro Branco</span>
+        </span>
+        <span class="place">CANTINA &amp; PIZZARIA · DESDE 1954</span>
+      </span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#ambiente">Ambiente</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="#reservas" class="btn btn-outline">Reservar mesa</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Bem-vindo à mesa da família</p>
+      <h1>Onde cada refeição vira lembrança de família.</h1>
+      <p class="lead">Desde 1954, a Cantina Ouro Branco segue no Bom Retiro com a tradição italiana em pratos para compartilhar, massas artesanais, molhos de preparo longo e uma mesa feita para reunir família e amigos.</p>
+      <div class="hero-actions">
+        <a href="#cardapio" class="btn btn-gold">Ver cardápio</a>
+        <a href="#reservas" class="btn btn-outline">Reservar mesa</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <span class="num">60+</span>
+          <span class="label">anos de tradição</span>
+        </div>
+        <div>
+          <span class="num">Bom Retiro</span>
+          <span class="label">bairro histórico</span>
+        </div>
+        <div>
+          <span class="num">Mesa</span>
+          <span class="label">para dividir e celebrar</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-figure">
+      <div class="emblem">
+        <img src="logo-original.svg" alt="Logo original da Cantina Ouro Branco" class="emblem-logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="sobre" id="sobre">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="section-head">
+          <span class="kicker">Nossa história</span>
+          <h2>Tradição que não sai de moda</h2>
+        </div>
+        <p>A Cantina Ouro Branco existe desde 1954 e continua no Bom Retiro, tradicional bairro de imigrantes de São Paulo, com mais de 60 anos de história na gastronomia italiana.</p>
+        <p>É a casa que reúne famílias, amigos e celebrações em torno de uma mesa acolhedora, com pratos para compartilhar, molhos de longo preparo e a autenticidade de uma cantina que se tornou referência da cidade.</p>
+        <p>Na cozinha, massas artesanais, grelhados, feijoada, peixes, aves e porções fiéis ao conceito de comida de mesa — servida com calor humano e atenção de quem conhece o sabor do lugar.</p>
+      </div>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </span>
+          <div>
+            <h4>Equipe de longa data</h4>
+            <p>Muitos garçons trabalham na casa há décadas — atenciosos, prestativos e de caso conhecido com os clientes.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a8 8 0 0 1 16 0"/><path d="M4 11h16v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/></svg>
+          </span>
+          <div>
+            <h4>Mesa farta</h4>
+            <p>Porções generosas de massas, carnes e pizzas — feitas para servir bem e dividir sem pressa.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20h5v-2a4 4 0 0 0-3-3.87"/><path d="M9 20H4v-2a4 4 0 0 1 3-3.87"/><circle cx="9" cy="7" r="4"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <div>
+            <h4>Feita para grupos</h4>
+            <p>Salão pensado para reunir famílias grandes, encontros de amigos e comemorações de todo tamanho.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARDÁPIO ================= -->
+<section class="cardapio" id="cardapio">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">O que servimos</span>
+      <h2>Cardápio</h2>
+      <p>Uma seleção da casa — o cardápio completo, com entradas, sobremesas e a carta de vinhos, está à mesa.</p>
+    </div>
+
+    <div class="menu-cols">
+      <div class="menu-col">
+        <h3>Entradas & massas</h3>
+        <div class="dish">
+          <div class="dish-top"><span class="name">Antepasto Italiano</span><span class="price">R$ 38,00</span></div>
+          <p>Seleção de entradas clássicas da casa, servidas para abrir a mesa com muito sabor.</p>
+        </div>
+        <div class="dish">
+          <div class="dish-top"><span class="name">Massas Caseiras</span><span class="price">R$ 42,00</span></div>
+          <p>Massas artesanais preparadas na casa, com molhos de longo preparo e toque tradicional.</p>
+        </div>
+        <div class="dish">
+          <div class="dish-top"><span class="name">Feijoada da Casa</span><span class="price">R$ 58,00</span></div>
+          <p>Clássico de mesa grande, pensado para reunir amigos e família em torno do prato.</p>
+        </div>
+      </div>
+
+      <div class="menu-col">
+        <h3>Carnes & grelhados</h3>
+        <div class="dish">
+          <div class="dish-top">
+            <span class="name">Bife à Parmegiana<span class="badge">Especialidade</span></span>
+            <span class="price">R$ 64,00</span>
+          </div>
+          <p>Clássico da casa, servido com arroz e fritas, molho e queijo gratinado.</p>
+        </div>
+        <div class="dish">
+          <div class="dish-top">
+            <span class="name">Filé à Parmegiana</span>
+            <span class="price">R$ 72,00</span>
+          </div>
+          <p>Filé empanado e coberto com molho e queijo, em versão que acompanha bem o clima de cantina.</p>
+        </div>
+        <div class="dish">
+          <div class="dish-top"><span class="name">Filé Recheado com Catupiry e Bacon</span><span class="price">R$ 78,00</span></div>
+          <p>Recheio cremoso de catupiry com bacon, com sabor intenso e apresentação de destaque.</p>
+        </div>
+      </div>
+
+      <div class="menu-col">
+        <h3>Pratos de destaque</h3>
+        <div class="dish">
+          <div class="dish-top"><span class="name">Porções & pizzas</span><span class="price">A partir de R$ 35,00</span></div>
+          <p>Ideais para dividir, com opções de entradas, saladas, porções e pizzas tradicionais.</p>
+        </div>
+        <div class="dish">
+          <div class="dish-top"><span class="name">Creme de Papaya com Licor de Cassis</span><span class="price">R$ 26,00</span></div>
+          <p>Uma sobremesa clássica para finalizar a refeição com leveza e aroma.</p>
+        </div>
+        <div class="dish">
+          <div class="dish-top"><span class="name">Molhos e pratos de casa</span><span class="price">Sob consulta</span></div>
+          <p>Receitas pensadas para compartilhar, com massa artesanal, molhos de preparo longo e preparo no ponto.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="menu-note">Preços e disponibilidade sujeitos a alteração. Consulte alergias e restrições com a equipe antes de pedir.</p>
+  </div>
+</section>
+
+<!-- ================= AMBIENTE ================= -->
+<section class="ambiente" id="ambiente">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="section-head">
+          <span class="kicker">O salão</span>
+          <h2>Um lugar para respirar fundo e ficar</h2>
+        </div>
+        <p>O salão da Cantina Ouro Branco foi pensado para conversas longas: mesas espaçosas, luz quente e um ritmo que não empurra ninguém para fora.</p>
+        <p>É aqui que aniversários, almoços de domingo e confraternizações de fim de ano acontecem — sempre com a mesma atenção de quem trata cliente como visita em casa.</p>
+      </div>
+
+      <div class="groups-card">
+        <h3>Grupos e comemorações</h3>
+        <p>Recebemos aniversários, confraternizações de empresa e almoços de família com muita gente à mesa. Fale com a gente com antecedência para reservar um espaço maior.</p>
+        <a href="#reservas" class="btn btn-outline">Falar sobre um evento</a>
+      </div>
+    </div>
+  </div>
+  <div class="pattern-strip" aria-hidden="true"></div>
+</section>
+
+<!-- ================= DEPOIMENTOS ================= -->
+<section class="depoimentos" id="depoimentos">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Avaliações do Google</span>
+      <h2>Depoimentos</h2>
+      <p>Clientes que voltam por qualidade, atendimento e sabor de casa.</p>
+    </div>
+
+    <div class="google-badge" aria-label="Avaliação média do Google: 4,8 de 5 estrelas">
+      <span class="stars">★★★★★</span>
+      <span>4,8/5 no Google</span>
+    </div>
+
+    <div class="testi-grid">
+      <div class="testi">
+        <p class="stars-line">★★★★★</p>
+        <p class="quote">"Comida deliciosa, ambiente acolhedor e atendimento impecável. É aquele lugar que você sente que vale a visita mais de uma vez."</p>
+        <p class="who">— Ana L.</p>
+      </div>
+      <div class="testi">
+        <p class="stars-line">★★★★★</p>
+        <p class="quote">"Tradição, sabor e uma mesa que parece de família. O filé e a pizza estão de parabéns; o atendimento também foi muito bom."</p>
+        <p class="who">— Roberto M.</p>
+      </div>
+      <div class="testi">
+        <p class="stars-line">★★★★☆</p>
+        <p class="quote">"Ambiente clássico, comida bem servida e preço justo. Vale muito a pena para reunir amigos e família em um almoço ou jantar especial."</p>
+        <p class="who">— Paula S.</p>
+      </div>
+    </div>
+
+    <p class="depoimentos-note">Notas e avaliações de 4 ou 5 estrelas refletem o que mais se repete nos comentários: boa comida, pessoas atenciosas e um ambiente acolhedor.</p>
+  </div>
+</section>
+
+<!-- ================= LOCALIZAÇÃO ================= -->
+<section class="local" id="localizacao">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Como chegar</span>
+      <h2>Localização</h2>
+    </div>
+
+    <div class="grid">
+      <div class="local-info">
+        <dl>
+          <dt>Endereço</dt>
+          <dd>Rua dos Italianos, 711 - Bom Retiro, São Paulo - SP<br>CEP 01131-000</dd>
+          <dt>Telefone</dt>
+          <dd><a href="tel:+5511914770387">(11) 91477-0387</a></dd>
+          <dt>WhatsApp</dt>
+          <dd><a href="https://wa.me/5511914770387" target="_blank" rel="noopener">(11) 91477-0387</a></dd>
+        </dl>
+        <a class="btn btn-line" href="https://www.google.com/maps/place/?q=place_id:ChIJrRVwMW5YzpQRhyTDPcrmuE8" target="_blank" rel="noopener">Traçar rota</a>
+      </div>
+
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Cantina+Ouro+Branco,+R.+dos+Italianos,+711+-+Bom+Retiro,+S%C3%A3o+Paulo+-+SP&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de localização da Cantina Ouro Branco">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESERVAS ================= -->
+<section class="reservas" id="reservas">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Reserve sua mesa</span>
+      <h2>Vamos guardar um lugar para você</h2>
+      <p>Preencha os dados abaixo — sua reserva é enviada direto para o nosso WhatsApp.</p>
+    </div>
+
+    <div class="res-grid">
+      <form class="res-form" id="reservaForm">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+
+        <div class="field-row">
+          <div>
+            <label for="pessoas">Número de pessoas</label>
+            <input type="number" id="pessoas" name="pessoas" min="1" max="40" placeholder="Ex: 4" required>
+          </div>
+          <div>
+            <label for="telefone">Seu telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 90000-0000" required>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div>
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+          <div>
+            <label for="horario">Horário</label>
+            <input type="time" id="horario" name="horario" required>
+          </div>
+        </div>
+
+        <div>
+          <label for="obs">Observações (opcional)</label>
+          <textarea id="obs" name="obs" rows="3" placeholder="Aniversário, restrição alimentar, mesa perto da janela..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold">Enviar pelo WhatsApp</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+
+      <div class="res-side">
+        <div class="feature-item" style="background:transparent;border-color:rgba(244,236,216,.18)">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#14261f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          <div>
+            <h4 style="color:var(--cream-soft)">Prefere ligar?</h4>
+            <p style="color:rgba(244,236,216,.75)">Atendemos também por telefone e WhatsApp em horário de funcionamento.</p>
+          </div>
+        </div>
+
+        <div class="hours">
+          <table>
+            <tr><td>Segunda</td><td>12h – 15h</td></tr>
+            <tr><td>Terça a sábado</td><td>12h – 23h</td></tr>
+            <tr><td>Domingo</td><td>12h – 22h</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="name">
+          <span class="cantina">Cantina</span>
+          <span class="ouro">Ouro Branco</span>
+        </span>
+        <p>Cozinha italiana tradicional, atendimento de décadas e uma mesa sempre pronta para receber família e amigos.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h5>Navegue</h5>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#ambiente">Ambiente</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Contato</h5>
+        <ul>
+          <li>Rua dos Italianos, 711 - Bom Retiro, São Paulo - SP</li>
+          <li><a href="tel:+5511914770387">(11) 91477-0387</a></li>
+          <li><a href="https://wa.me/5511914770387" target="_blank" rel="noopener">WhatsApp: (11) 91477-0387</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="ano"></span> Cantina Ouro Branco. Todos os direitos reservados.</span>
+      <span>Cardápio e valores sujeitos a alteração sem aviso prévio.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="install-btn" id="installBtn">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+  Instalar app
+</button>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
